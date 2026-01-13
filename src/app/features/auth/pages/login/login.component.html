@@ -1,0 +1,21 @@
+<div class="login-container">
+  <h1>ApyWork</h1>
+
+  <form [formGroup]="form" (ngSubmit)="submit()">
+    <input
+      type="email"
+      placeholder="E-mail"
+      formControlName="email"
+    />
+
+    <input
+      type="password"
+      placeholder="Senha"
+      formControlName="password"
+    />
+
+    <button type="submit" [disabled]="form.invalid">
+      Entrar
+    </button>
+  </form>
+</div>
