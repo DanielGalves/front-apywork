@@ -1,0 +1,12 @@
+<p>agenda-home works!</p>
+<app-header />
+
+<main class="agenda-container">
+  <h2>Agenda</h2>
+
+  <ul>
+    <li *ngFor="let item of availability">
+      <strong>{{ item.date }}</strong> — {{ item.status }}
+    </li>
+  </ul>
+</main>
