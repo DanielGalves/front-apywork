@@ -10,3 +10,10 @@ import { RouterOutlet } from '@angular/router';
 export class App {
   protected readonly title = signal('front-apywork');
 }
+@Component({
+  selector: 'app-root',
+  standalone: true,
+  imports: [RouterOutlet],
+  template: `<router-outlet />`
+})
+export class AppComponent {}
