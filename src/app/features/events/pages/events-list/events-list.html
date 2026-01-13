@@ -1,0 +1,13 @@
+<p>events-list works!</p>
+
+
+<main class="events-container">
+  <h2>Eventos</h2>
+
+  <ul>
+    <li *ngFor="let event of events">
+      <strong>{{ event.name }}</strong><br />
+      <small>{{ event.date }} — {{ event.location }}</small>
+    </li>
+  </ul>
+</main>
