@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Header } from '../../../../shared/components/header/header';
+
 
 @Component({
   selector: 'app-agenda-home',
   standalone: true,
-  imports: [CommonModule, Header],
+  imports: [CommonModule],
   templateUrl: './agenda-home.html',
   styleUrls: ['./agenda-home.scss']
 })
